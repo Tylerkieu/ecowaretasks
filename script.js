@@ -48,7 +48,7 @@ function addTaskToDOM(task) {
         const index = tasks.findIndex(t => t.id === task.id);
         if (index !== -1) {
             tasks.splice(index, 1);
-            taskList.removeChild(taskList.children[task.id]);
+            taskList.removeChild(li);
         }
     });
 
